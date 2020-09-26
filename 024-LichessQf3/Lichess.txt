@@ -1,0 +1,1601 @@
+1+0 � BULLET � RATED
+30 hours ago
+NumaKarlsson
+822 +6
+ShadyAladm
+804 -5
+Time out, White is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nc6 3. Bc4 Nf6 ... 19 moves
+1+0 � BULLET � RATED
+30 hours ago
+anujshringi
+878 +5
+NumaKarlsson
+827 -5
+Black resigned, White is victorious
+C23 Bishop's Opening
+1. e4 e5 2. Bc4 Qf6 3. Qf3 Qxf3 ... 10 moves
+1+0 � BULLET � RATED
+30 hours ago
+NumaKarlsson
+826 +1
+anujshringi
+879 -1
+Draw
+B01 Scandinavian Defense
+1. e4 d5 2. Qf3 Nf6 3. exd5 Nxd5 ... 10 moves
+1+0 � BULLET � RATED
+30 hours ago
+anujshringi
+886 -7
+NumaKarlsson
+820 +6
+Time out, Black is victorious
+C23 Bishop's Opening
+1. e4 e5 2. Bc4 Qf6 3. Qf3 Be7 ... 28 moves
+1+0 � BULLET � RATED
+30 hours ago
+NumaKarlsson
+824 -4
+anujshringi
+881 +5
+Time out, Black is victorious
+B01 Scandinavian Defense
+1. e4 d5 2. Qf3 Nh6 3. exd5 Bg4 ... 22 moves
+1+0 � BULLET � RATED
+30 hours ago
+anujshringi
+888 -7
+NumaKarlsson
+817 +7
+Checkmate, Black is victorious
+C23 Bishop's Opening
+1. e4 e5 2. Bc4 Qf6 3. Qf3 Bc5 ... 16 moves
+1+0 � BULLET � RATED
+30 hours ago
+Uruk-I
+894 +24
+NumaKarlsson
+822 -5
+Time out, White is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Qf6 3. Bc4 Qxf3 ... 40 moves
+Computer analysis available
+1+0 � BULLET � RATED
+30 hours ago
+NumaKarlsson
+814 +8
+heyitsrey
+935 -32
+Time out, White is victorious
+B02 Alekhine Defense
+1. e4 Nf6 2. Qf3 d5 3. exd5 Nxd5 ... 24 moves
+1+0 � BULLET � RATED
+30 hours ago
+FEEFSUUS
+819 -13
+NumaKarlsson
+809 +5
+Time out, Black is victorious
+C20 King's Pawn Game: Wayward Queen Attack
+1. e4 e5 2. Qh5 Qf6 3. Bc4 Bc5 ... 23 moves
+1+0 � BULLET � RATED
+31 hours ago
+FEEFSUUS
+833 -14
+NumaKarlsson
+803 +6
+Time out, Black is victorious
+C20 King's Pawn Game: Wayward Queen Attack
+1. e4 e5 2. Qh5 Qf6 3. Bc4 Bc5 ... 32 moves
+1+0 � BULLET � RATED
+31 hours ago
+NumaKarlsson
+797 +6
+Uruk-I
+833? -48
+Black resigned, White is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Qf6 3. Qxf6 Bc5 ... 5 moves
+1+0 � BULLET � RATED
+31 hours ago
+Uruk-I
+897? -64
+NumaKarlsson
+790 +7
+Checkmate, Black is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. Nc3 Bc5 ... 6 moves
+1+0 � BULLET � RATED
+31 hours ago
+NumaKarlsson
+782 +8
+trugarde
+882 -7
+Checkmate, White is victorious
+B00 Goldsmith Defense
+1. e4 h5 2. Qf3 a5 3. Bc4 b6 ... 4 moves
+5+3 � BLITZ � RATED
+47 hours ago � Svenska Knatteligan Arena
+LeonardHammar
+1202 +3
+NumaKarlsson
+1039 -3
+Black resigned, White is victorious
+C20 King's Pawn Game: Wayward Queen Attack, Kiddie Countergambit
+1. e4 e5 2. Qh5 Nf6 3. Qxe5+ Qe7 ... 24 moves
+5+3 � BLITZ � RATED
+47 hours ago � Svenska Knatteligan Arena
+NumaKarlsson
+1037 +2
+osara
+812 -2
+Checkmate, White is victorious
+C42 Russian Game: Urusov Gambit
+1. e4 e5 2. Nf3 Nf6 3. Bc4 Bc5 ... 15 moves
+5+3 � BLITZ � RATED
+47 hours ago � Svenska Knatteligan Arena
+NumaKarlsson
+1037 �0
+ocristina
+1510 �0
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nc6 3. Bc4 Nf6 ... 7 moves
+5+3 � BLITZ � RATED
+2 days ago � Svenska Knatteligan Arena
+stefanth
+1260 +5
+NumaKarlsson
+1040 -3
+Black resigned, White is victorious
+C00 French Defense: Normal Variation
+1. e4 e6 2. d4 Qf6 3. e5 Qf5 ... 22 moves
+5+3 � BLITZ � RATED
+2 days ago � Svenska Knatteligan Arena
+osara
+803 +9
+NumaKarlsson
+1049 -9
+Checkmate, White is victorious
+C23 Bishop's Opening
+1. e4 e5 2. Bc4 Qf6 3. Nf3 Bc5 ... 26 moves
+Computer analysis available
+5+3 � BLITZ � RATED
+2 days ago � Svenska Knatteligan Arena
+NumaKarlsson
+1044 +5
+Jona_8
+989 -8
+Checkmate, White is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Bc5 3. Bc4 Nf6 ... 11 moves
+5+3 � BLITZ � RATED
+2 days ago � Svenska Knatteligan Arena
+NumaKarlsson
+1045 -1
+ocristina
+1501 +1
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nc6 3. Bc4 Nf6 ... 26 moves
+Computer analysis available
+5+3 � BLITZ � RATED
+2 days ago � Svenska Knatteligan Arena
+NumaKarlsson
+1054 -9
+osara
+795 +9
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Qh4 3. Bc4 Nf6 ... 14 moves
+5+3 � BLITZ � RATED
+2 days ago � Svenska Knatteligan Arena
+williamstrandhammar
+1473 +2
+NumaKarlsson
+1055 -1
+Black resigned, White is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. Bc4 Bc5 ... 11 moves
+5+3 � BLITZ � RATED
+2 days ago � Svenska Knatteligan Arena
+ocristina
+1495 +1
+NumaKarlsson
+1056 -1
+Black resigned, White is victorious
+C23 Bishop's Opening
+1. e4 e5 2. Bc4 Qf6 3. Nc3 Bc5 ... 9 moves
+Computer analysis available
+5+3 � BLITZ � RATED
+2 days ago � Svenska Knatteligan Arena
+NumaKarlsson
+1060 -4
+LeonardHammar
+1182 +4
+Checkmate, Black is victorious
+C42 Russian Game: Urusov Gambit
+1. e4 e5 2. Nf3 Nf6 3. Bc4 Nxe4 ... 5 moves
+Computer analysis available
+5+3 � BLITZ � RATED
+2 days ago � Svenska Knatteligan Arena
+osara
+794 -2
+NumaKarlsson
+1058 +2
+Checkmate, Black is victorious
+C25 Vienna Game
+1. e4 e5 2. Nc3 Qf6 3. d3 Bc5 ... 4 moves
+5+3 � BLITZ � RATED
+2 days ago � Svenska Knatteligan Arena
+NumaKarlsson
+1050 +8
+LeonardHammar
+1187 -8
+Checkmate, White is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nf6 3. Bc4 Bc5 ... 8 moves
+5+3 � BLITZ � RATED
+2 days ago � Svenska Knatteligan Arena
+williamstrandhammar
+1465 +2
+NumaKarlsson
+1051 -1
+Black resigned, White is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. Bc4 Bc5 ... 11 moves
+Computer analysis available
+5+3 � BLITZ � RATED
+2 days ago � Svenska Knatteligan Arena
+NumaKarlsson
+1054 -3
+PixboEmil
+1200 +6
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nf6 3. Bc4 Nc6 ... 8 moves
+1+0 � BULLET � RATED
+2 days ago
+vonbanle
+882 -13
+NumaKarlsson
+775 +7
+Time out, Black is victorious
+C20 King's Pawn Game: Beyer Gambit
+1. d4 e5 2. e4 d5 3. dxe5 dxe4 ... 32 moves
+1+0 � BULLET � RATED
+2 days ago
+PRIYANSHU_08122012
+600 �0
+NumaKarlsson
+772 +3
+Checkmate, Black is victorious
+C20 King's Pawn Game
+1. e4 e5 2. Qg4 Qf6 3. Qh5 Bc5 ... 8 moves
+1+0 � BULLET � RATED
+2 days ago
+NumaKarlsson
+780 -8
+GabitoRomero2014
+634 +13
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 f6 3. Bc4 Bc5 ... 7 moves
+5+3 � BLITZ � RATED
+3 days ago � Svenska Knatteligan Arena
+NumaKarlsson
+1058 -4
+PixboEmil
+1193 +7
+White resigned, Black is victorious
+A00 Van't Kruijs Opening
+1. e3 e5 2. Qf3 Nf6 3. Bc4 Bc5 ... 16 moves
+5+3 � BLITZ � RATED
+4 days ago � Svenska Knatteligan Arena
+LeonardHammar
+1182 +4
+NumaKarlsson
+1062 -4
+Black resigned, White is victorious
+C00 French Defense: Knight Variation
+1. e4 e6 2. Nf3 Qf6 3. Bc4 Bc5 ... 27 moves
+5+3 � BLITZ � RATED
+4 days ago � Svenska Knatteligan Arena
+NumaKarlsson
+1060 +2
+osara
+786 -2
+Checkmate, White is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 d6 3. Bc4 h5 ... 4 moves
+5+3 � BLITZ � RATED
+4 days ago � Svenska Knatteligan Arena
+Leokungen
+1421 +2
+NumaKarlsson
+1061 -1
+Black resigned, White is victorious
+C00 French Defense
+1. e4 e6 2. Bc4 Qf6 3. Nf3 Bc5 ... 6 moves
+5+3 � BLITZ � RATED
+4 days ago � Svenska Knatteligan Arena
+ocristina
+1483 +1
+NumaKarlsson
+1062 -1
+Black resigned, White is victorious
+C23 Bishop's Opening
+1. e4 e5 2. Bc4 Qf6 3. Nc3 Bc5 ... 11 moves
+5+3 � BLITZ � RATED
+4 days ago � Svenska Knatteligan Arena
+NumaKarlsson
+1054 +8
+LeonardHammar
+1189 -8
+Checkmate, White is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nf6 3. Bc4 Bc5 ... 12 moves
+5+3 � BLITZ � RATED
+4 days ago � Svenska Knatteligan Arena
+PixboEmil
+1207 -16
+NumaKarlsson
+1046 +8
+Checkmate, Black is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. Bb5 Bc5 ... 17 moves
+5+3 � BLITZ � RATED
+4 days ago � Svenska Knatteligan Arena
+NumaKarlsson
+1047 -1
+Leokungen
+1424 +1
+White resigned, Black is victorious
+B00 Nimzowitsch Defense: Franco-Nimzowitsch Variation
+1. e4 e6 2. Nf3 Nc6 3. Bc4 d6 ... 21 moves
+5+3 � BLITZ � RATED
+4 days ago � Svenska Knatteligan Arena
+NumaKarlsson
+1053 -6
+Jona_8
+1005 +13
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Bc5 3. Bc4 Nf6 ... 7 moves
+5+3 � BLITZ � RATED
+4 days ago � Svenska Knatteligan Arena
+PixboEmil
+1204 +8
+NumaKarlsson
+1057 -4
+Black resigned, White is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. d3 Bc5 ... 6 moves
+5+3 � BLITZ � RATED
+4 days ago � Svenska Knatteligan Arena
+NumaKarlsson
+1058 -1
+ocristina
+1474 +1
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Bc5 3. Bc4 Nf6 ... 12 moves
+5+3 � BLITZ � RATED
+4 days ago � Svenska Knatteligan Arena
+Jona_8
+1017 -10
+NumaKarlsson
+1053 +5
+Checkmate, Black is victorious
+C23 Bishop's Opening
+1. e4 e5 2. Bc4 Qf6 3. Nf3 Bc5 ... 6 moves
+5+3 � BLITZ � RATED
+4 days ago � Svenska Knatteligan Arena
+LeonardHammar
+1184 +5
+NumaKarlsson
+1056 -3
+Black resigned, White is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. Bc4 Bc5 ... 5 moves
+2+1 � BULLET � RATED
+5 days ago
+NumaKarlsson
+785 -5
+jomardyan666
+829 +8
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nc6 3. Bc4 Qe7 ... 13 moves
+2+1 � BULLET � RATED
+5 days ago
+rpablo007
+867 +5
+NumaKarlsson
+789 -4
+Black resigned, White is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. Bc4 Bc5 ... 10 moves
+2+1 � BULLET � RATED
+5 days ago
+NumaKarlsson
+794 -5
+rpablo007
+852 +5
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nf6 3. Bc4 Bc5 ... 13 moves
+2+1 � BULLET � RATED
+5 days ago
+NumaKarlsson
+799 -5
+ricavicious
+867 +5
+White resigned, Black is victorious
+C00 French Defense
+1. e4 e6 2. Qf3 d5 3. exd5 Qxd5 ... 13 moves
+2+1 � BULLET � RATED
+5 days ago
+ilya_mord
+943 +3
+NumaKarlsson
+802 -3
+Black resigned, White is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. Nc3 Bc5 ... 9 moves
+2+1 � BULLET � RATED
+5 days ago
+NumaKarlsson
+808 -6
+ArturSHZ
+830 +8
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nf6 3. Bc4 d5 ... 7 moves
+2+1 � BULLET � RATED
+5 days ago
+ArturSHZ
+822 +8
+NumaKarlsson
+814 -6
+Checkmate, White is victorious
+C20 King's Pawn Game: Wayward Queen Attack
+1. e4 e5 2. Qh5 Qf6 3. Nf3 Bc5 ... 7 moves
+2+1 � BULLET � RATED
+5 days ago
+apitican
+940 +4
+NumaKarlsson
+818 -4
+Black resigned, White is victorious
+A20 English Opening: King's English Variation
+1. c4 e5 2. d4 Qf6 3. d5 Bc5 ... 8 moves
+2+1 � BULLET � RATED
+5 days ago
+NumaKarlsson
+822 -4
+ilya_mord
+939 +4
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nf6 3. Bc4 Nc6 ... 13 moves
+5+0 � BLITZ � RATED
+1 week ago � Hourly Blitz Arena
+TheChessX
+1124 -7
+NumaKarlsson
+1049 +7
+Checkmate, Black is victorious
+C44 King's Knight Opening: Konstantinopolsky
+1. e4 e5 2. Nf3 Nc6 3. g3 Bc5 ... 34 moves
+5+0 � BLITZ � RATED
+1 week ago � Hourly Blitz Arena
+NumaKarlsson
+1049 �0
+Latias
+1927 �0
+White resigned, Black is victorious
+B20 Sicilian Defense
+1. e4 c5 2. Qf3 Nc6 3. Bc4 Ne5 ... 36 moves
+5+0 � BLITZ � RATED
+1 week ago � Hourly Blitz Arena
+Franciscord
+1719 -11
+NumaKarlsson
+1038 +11
+White resigned, Black is victorious
+D08 Queen's Gambit Refused: Albin Countergambit
+1. d4 d5 2. c4 e5 3. dxe5 dxc4 ... 6 moves
+5+0 � BLITZ � RATED
+1 week ago � Hourly Blitz Arena
+ThKtorpe
+1268 +3
+NumaKarlsson
+1040 -2
+Black resigned, White is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. Bc4 Bc5 ... 11 moves
+5+0 � BLITZ � RATED
+1 week ago � Hourly Blitz Arena
+EsauToroVanegas
+1145 -9
+NumaKarlsson
+1033 +7
+White resigned, Black is victorious
+A00 Van't Kruijs Opening
+1. e3 e5 2. Bc4 d5 3. Bb3 Bf5 ... 43 moves
+5+0 � BLITZ � RATED
+1 week ago � Hourly Blitz Arena
+NumaKarlsson
+1037 -4
+ALIALMOSRATI
+1155 +4
+Time out, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nf6 3. Bc4 c6 ... 40 moves
+5+3 � BLITZ � RATED
+1 week ago � Svenska Knatteligan Arena
+NumaKarlsson
+1038 -1
+ocristina
+1463 +1
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nf6 3. Bc4 Bc5 ... 9 moves
+5+3 � BLITZ � RATED
+1 week ago � Svenska Knatteligan Arena
+NumaKarlsson
+1041 -3
+PixboEmil
+1181 +8
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 f6 3. Bc4 Nc6 ... 10 moves
+5+3 � BLITZ � RATED
+1 week ago � Svenska Knatteligan Arena
+osara
+797 +9
+NumaKarlsson
+1050 -9
+Black left the game, White is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3
+5+3 � BLITZ � RATED
+1 week ago � Svenska Knatteligan Arena
+NumaKarlsson
+1051 -1
+williamstrandhammar
+1497 +2
+Checkmate, Black is victorious
+C00 French Defense
+1. e4 e6 2. Qf3 d5 3. exd5 exd5 ... 19 moves
+5+3 � BLITZ � RATED
+1 week ago � Svenska Knatteligan Arena
+Paulinae
+1029? -31
+NumaKarlsson
+1046 +5
+Checkmate, Black is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. Nc3 Bc5 ... 9 moves
+5+3 � BLITZ � RATED
+1 week ago � Svenska Knatteligan Arena
+NumaKarlsson
+1044 +2
+osara
+800 -2
+Checkmate, White is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Qh4 3. Bc4 Bc5 ... 14 moves
+5+3 � BLITZ � RATED
+1 week ago � Svenska Knatteligan Arena
+williamstrandhammar
+1491 +2
+NumaKarlsson
+1045 -1
+Black resigned, White is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. Bc4 Bc5 ... 9 moves
+5+3 � BLITZ � RATED
+1 week ago � Svenska Knatteligan Arena
+NumaKarlsson
+1048 -3
+PixboEmil
+1166 +9
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nf6 3. Bc4 d5 ... 9 moves
+5+3 � BLITZ � RATED
+1 week ago � Svenska Knatteligan Arena
+Leokungen
+1426 +1
+NumaKarlsson
+1050 -2
+Black resigned, White is victorious
+C23 Bishop's Opening
+1. e4 e5 2. Bc4 Qf6 3. Qf3 Be7 ... 6 moves
+5+3 � BLITZ � RATED
+1 week ago � Svenska Knatteligan Arena
+NumaKarlsson
+1051 -1
+williamstrandhammar
+1507 +2
+White resigned, Black is victorious
+C00 French Defense: Knight Variation
+1. e4 e6 2. Nf3 d5 3. exd5 exd5 ... 17 moves
+5+3 � BLITZ � RATED
+1 week ago � Svenska Knatteligan Arena
+NumaKarlsson
+1042 +9
+PixboEmil
+1182 -19
+Checkmate, White is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Bb4 3. Bc4 Nh6 ... 45 moves
+1+0 � BULLET � RATED
+1 week ago
+zorokober1
+696 -6
+NumaKarlsson
+818 +4
+Checkmate, Black is victorious
+C20 King's Pawn Game
+1. e4 e5 2. h4 Qf6 3. Nh3 Bc5 ... 4 moves
+1+0 � BULLET � RATED
+1 week ago
+NumaKarlsson
+814 +4
+zorokober1
+703 -7
+Checkmate, White is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Bb4 3. Bc4 c5 ... 4 moves
+1+0 � BULLET � RATED
+1 week ago
+zorokober1
+709 -6
+NumaKarlsson
+810 +4
+Checkmate, Black is victorious
+C23 Bishop's Opening
+1. e4 e5 2. Bc4 Qf6 3. b3 Bc5 ... 4 moves
+1+0 � BULLET � RATED
+1 week ago
+NumaKarlsson
+806 +4
+zorokober1
+717 -8
+Checkmate, White is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Bc5 3. Bc4 Nc6 ... 4 moves
+1+0 � BULLET � RATED
+1 week ago
+zorokober1
+724 -7
+NumaKarlsson
+801 +5
+Checkmate, Black is victorious
+C23 Bishop's Opening
+1. e4 e5 2. Bc4 Qf6 3. a3 Bc5 ... 4 moves
+1+0 � BULLET � RATED
+1 week ago
+NumaKarlsson
+796 +5
+zorokober1
+732 -8
+Checkmate, White is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nc6 3. Bc4 b5 ... 4 moves
+1+0 � BULLET � RATED
+1 week ago
+NumaKarlsson
+800 -4
+alvaroluigi
+932 +4
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nf6 3. Bc4 Nc6 ... 5 moves
+1+0 � BULLET � RATED
+1 week ago
+alvaroluigi
+928 +4
+NumaKarlsson
+804 -4
+Black resigned, White is victorious
+A00 Kadas Opening
+1. h4 e5 2. Nc3 Qf6 3. e4 Bc5 ... 7 moves
+1+0 � BULLET � RATED
+1 week ago
+NumaKarlsson
+808 -4
+alvaroluigi
+924 +4
+White resigned, Black is victorious
+B00 Ware Defense
+1. e4 a5 2. Qf3 Nf6 3. Bc4 d5 ... 5 moves
+1+0 � BULLET � RATED
+1 week ago
+NumaKarlsson
+811 -3
+titan01
+939 +4
+White resigned, Black is victorious
+B10 Caro-Kann Defense
+1. e4 c6 2. Qf3 d5 3. Bc4 e5 ... 19 moves
+1+0 � BULLET � RATED
+1 week ago
+NumaKarlsson
+818 -7
+Satpalmalik
+770 +6
+White resigned, Black is victorious
+B06 Modern Defense
+1. e4 g6 2. Qf3 Nf6 3. Bc4 Bg7 ... 8 moves
+1+0 � BULLET � RATED
+1 week ago
+Satpalmalik
+763 +7
+NumaKarlsson
+824 -6
+Black resigned, White is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. Bc4 Bc5 ... 7 moves
+1+0 � BULLET � RATED
+1 week ago
+NumaKarlsson
+831 -7
+Satpalmalik
+756 +7
+White resigned, Black is victorious
+B06 Modern Defense
+1. e4 g6 2. Qf3 Nf6 3. Bc4 Bg7 ... 14 moves
+1+0 � BULLET � RATED
+1 week ago
+Satpalmalik
+749 +7
+NumaKarlsson
+838 -7
+Black resigned, White is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. Bc4 Bc5 ... 7 moves
+1+0 � BULLET � RATED
+1 week ago
+NumaKarlsson
+834 +4
+Satpalmalik
+753 -4
+Time out, White is victorious
+B06 Modern Defense
+1. e4 g6 2. Qf3 Nf6 3. Bc4 Bg7 ... 16 moves
+1+0 � BULLET � RATED
+1 week ago
+Satpalmalik
+746 +7
+NumaKarlsson
+841 -7
+Black resigned, White is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. Bc4 Bc5 ... 7 moves
+1+0 � BULLET � RATED
+1 week ago
+NumaKarlsson
+846 -5
+shashankbgb
+881 +5
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 d6 3. Bc4 Qe7 ... 13 moves
+1+0 � BULLET � RATED
+1 week ago
+shashankbgb
+887 -6
+NumaKarlsson
+840 +6
+Time out, Black is victorious
+C33 King's Gambit Accepted, Basman Gambit
+1. e4 e5 2. f4 exf4 3. Qe2 Qf6 ... 26 moves
+1+0 � BULLET � RATED
+1 week ago
+scacisludere
+928? -65
+NumaKarlsson
+833 +7
+Checkmate, Black is victorious
+A00 Gedult's Opening
+1. f3 e5 2. g4 Qf6 3. h4 Bc5 ... 6 moves
+1+0 � BULLET � RATED
+1 week ago
+NumaKarlsson
+841 -8
+Satpalmalik
+731 +8
+White resigned, Black is victorious
+B06 Modern Defense
+1. e4 g6 2. Qf3 Nf6 3. Bc4 Bg7 ... 11 moves
+1+0 � BULLET � RATED
+1 week ago
+Mahnaz_ghandali
+696 -4
+NumaKarlsson
+837 +4
+Time out, Black is victorious
+A00 Mieses Opening: Reversed Rat
+1. d3 e5 2. c3 Qf6 3. b3 Bc5 ... 23 moves
+1+0 � BULLET � RATED
+1 week ago
+NumaKarlsson
+833 +4
+Mahnaz_ghandali
+700 -4
+Checkmate, White is victorious
+B00 St. George Defense
+1. e4 a6 2. Qf3 b6 3. Bc4 c6 ... 4 moves
+1+0 � BULLET � RATED
+1 week ago
+shashankbgb
+878 +6
+NumaKarlsson
+838 -5
+Black resigned, White is victorious
+C20 King's Pawn Game: King's Head Opening
+1. e4 e5 2. f3 Qf6 3. g4 Bc5 ... 7 moves
+1+0 � BULLET � RATED
+1 week ago
+NumaKarlsson
+843 -5
+devjarkhariya_25
+939 +5
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nc6 3. Bc4 f6 ... 12 moves
+1+0 � BULLET � RATED
+1 week ago
+st0nedsheep
+815 -6
+NumaKarlsson
+837 +6
+Checkmate, Black is victorious
+A01 Nimzo-Larsen Attack: Modern Variation
+1. b3 e5 2. Bb2 Qf6 3. c3 Bc5 ... 4 moves
+1+0 � BULLET � RATED
+1 week ago
+M-alp
+927 +5
+NumaKarlsson
+842 -5
+Black resigned, White is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. Nc3 Bc5 ... 15 moves
+1+0 � BULLET � RATED
+1 week ago
+NumaKarlsson
+837 +5
+Muzzarratti
+745 -4
+Time out, White is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 d6 3. Bc4 Be6 ... 24 moves
+1+0 � BULLET � RATED
+1 week ago
+NumaKarlsson
+834 +3
+Mahnaz_ghandali
+700 -4
+Checkmate, White is victorious
+B00 Nimzowitsch Defense
+1. e4 Nc6 2. Qf3 Nf6 3. Bc4 e5 ... 10 moves
+1+0 � BULLET � RATED
+1 week ago
+Smuuun
+785 -14
+NumaKarlsson
+828 +6
+Checkmate, Black is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. g3 Bc5 ... 9 moves
+�+5 � BLITZ � CASUAL
+1 week ago
+matveimokretsov
+1529
+NumaKarlsson
+1042
+Black resigned, White is victorious
+A40 Englund Gambit
+1. d4 e5 2. dxe5 d5 3. exd6 Qf6 ... 9 moves
+�+5 � BLITZ � CASUAL
+1 week ago
+NumaKarlsson
+1042
+matveimokretsov
+1529
+White resigned, Black is victorious
+B20 Sicilian Defense
+1. e4 c5 2. Qf3 e6 3. Bc4 d6 ... 9 moves
+5+3 � BLITZ � RATED
+2 weeks ago � Svenska Knatteligan Arena
+stefanth
+1286 -15
+NumaKarlsson
+1033 +9
+Checkmate, Black is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. d3 Bc5 ... 42 moves
+5+3 � BLITZ � RATED
+2 weeks ago � Svenska Knatteligan Arena
+LeonardHammar
+1195 -9
+NumaKarlsson
+1024 +9
+Checkmate, Black is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. Bc4 Bc5 ... 26 moves
+5+3 � BLITZ � RATED
+2 weeks ago � Svenska Knatteligan Arena
+NumaKarlsson
+1026 -2
+Leokungen
+1420 +1
+White resigned, Black is victorious
+C00 French Defense: Knight Variation
+1. e4 e6 2. Nf3 d6 3. Bc4 Nc6 ... 20 moves
+5+3 � BLITZ � RATED
+2 weeks ago � Svenska Knatteligan Arena
+stefanth
+1278 +4
+NumaKarlsson
+1028 -2
+Black resigned, White is victorious
+C40 King's Knight Opening
+1. e4 e5 2. Nf3 g5 3. Nxe5 Qf6 ... 7 moves
+5+3 � BLITZ � RATED
+2 weeks ago � Svenska Knatteligan Arena
+NumaKarlsson
+1029 -1
+ocristina
+1463 �0
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Bc5 3. Bc4 Nf6 ... 11 moves
+5+3 � BLITZ � RATED
+2 weeks ago � Svenska Knatteligan Arena
+NumaKarlsson
+1032 -3
+LeonardHammar
+1187 +4
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nf6 3. Bc4 Bc5 ... 25 moves
+5+3 � BLITZ � RATED
+2 weeks ago � Svenska Knatteligan Arena
+Jona_8
+1035 +13
+NumaKarlsson
+1038 -6
+Black resigned, White is victorious
+C23 Bishop's Opening: Boi Variation
+1. e4 e5 2. Bc4 Bc5 3. Nf3 Nf6 ... 14 moves
+5+3 � BLITZ � RATED
+2 weeks ago � Svenska Knatteligan Arena
+stefanth
+1280 +5
+NumaKarlsson
+1040 -2
+Checkmate, White is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. Bc4 Bc5 ... 29 moves
+5+3 � BLITZ � RATED
+2 weeks ago � Svenska Knatteligan Arena
+NumaKarlsson
+1044 -4
+LeonardHammar
+1173 +4
+Checkmate, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nf6 3. Bc4 Bc5 ... 13 moves
+5+3 � BLITZ � RATED
+2 weeks ago � Svenska Knatteligan Arena
+NumaKarlsson
+1038 +6
+Jona_8
+1048 -14
+Checkmate, White is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Bc5 3. Bc4 Nf6 ... 14 moves
+�+5 � BLITZ � CASUAL
+2 weeks ago
+NumaKarlsson
+1038
+DBEddy11011
+1644
+White resigned, Black is victorious
+C44 Irish Gambit
+1. e4 e5 2. Nf3 Nc6 3. Nxe5 Nxe5 ... 13 moves
+�+5 � BLITZ � CASUAL
+2 weeks ago
+GruimSy
+1503
+NumaKarlsson
+1038
+Black resigned, White is victorious
+A07 King's Indian Attack: Omega-Delta Gambit
+1. Nf3 e5 2. g3 d5 3. Nxe5 Nc6 ... 24 moves
+1+0 � BULLET � RATED
+2 weeks ago
+hanni_v69
+923 +7
+NumaKarlsson
+833 -5
+Time out, White is victorious
+A00 Van't Kruijs Opening
+1. e3 e5 2. Qf3 Qf6 3. Ba6 bxa6 ... 34 moves
+1+0 � BULLET � RATED
+2 weeks ago
+NumaKarlsson
+839 -6
+kylima
+807 +7
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nf6 3. Bc4 d5 ... 6 moves
+Computer analysis available
+1+0 � BULLET � RATED
+2 weeks ago
+Lewick
+785 -5
+NumaKarlsson
+834 +5
+Time out, Black is victorious
+A20 English Opening: King's English Variation
+1. c4 e5 2. Qa4 Qf6 3. d3 Bc5 ... 20 moves
+1+0 � BULLET � RATED
+2 weeks ago
+NumaKarlsson
+827 +7
+Rprock
+925 -7
+Time out, White is victorious
+B01 Scandinavian Defense: Mieses-Kotroc Variation
+1. e4 d5 2. exd5 Qxd5 3. Nc3 Qe6+ ... 17 moves
+1+0 � BULLET � RATED
+2 weeks ago
+sharduljoshi
+824 +21
+NumaKarlsson
+832 -5
+Black resigned, White is victorious
+C46 Three Knights Opening
+1. e4 e5 2. Nf3 Nc6 3. Nc3 Qf6 ... 16 moves
+1+0 � BULLET � RATED
+2 weeks ago
+NumaKarlsson
+837 -5
+Josehuamani
+918 +4
+White resigned, Black is victorious
+C00 French Defense
+1. e4 e6 2. Qf3 c6 3. Be2 Qa5 ... 7 moves
+1+0 � BULLET � RATED
+2 weeks ago
+NumaKarlsson
+841 -4
+agance1
+896 +5
+White resigned, Black is victorious
+B10 Caro-Kann Defense
+1. e4 c6 2. Qf3 d5 3. Bc4 Nf6 ... 11 moves
+1+0 � BULLET � RATED
+2 weeks ago
+NumaKarlsson
+838 +3
+jharia
+703 -12
+Time out, White is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nf6 3. Bc4 Be7 ... 14 moves
+1+0 � BULLET � RATED
+2 weeks ago
+jharia
+717 -14
+NumaKarlsson
+834 +4
+White resigned, Black is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. d3 Bc5 ... 12 moves
+1+0 � BULLET � RATED
+2 weeks ago
+NumaKarlsson
+830 +4
+jharia
+732 -15
+Time out, White is victorious
+B01 Scandinavian Defense
+1. e4 d5 2. Qf3 d4 3. Bc4 Nf6 ... 10 moves
+1+0 � BULLET � RATED
+2 weeks ago
+NumaKarlsson
+825 +5
+Snetlo
+773 -17
+Time out, White is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Qf6 3. Bc4 Qxf3 ... 19 moves
+1+0 � BULLET � RATED
+2 weeks ago
+diddy
+925 +4
+NumaKarlsson
+829 -4
+Black resigned, White is victorious
+A21 English Opening: King's English Variation, Reversed Sicilian
+1. c4 e5 2. Nc3 Qf6 3. e4 Bc5 ... 5 moves
+1+0 � BULLET � RATED
+2 weeks ago
+Ronster
+938 -7
+NumaKarlsson
+822 +7
+Checkmate, Black is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. c3 Bc5 ... 6 moves
+1+0 � BULLET � RATED
+2 weeks ago
+NumaKarlsson
+816 +6
+Snetlo
+814 -22
+Time out, White is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Qh4 3. Bc4 Bb4 ... 19 moves
+1+0 � BULLET � RATED
+2 weeks ago
+almarkow
+965 -8
+NumaKarlsson
+808 +8
+Time out, Black is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. Bc4 Bc5 ... 24 moves
+30+20 � CLASSICAL � RATED
+2 weeks ago
+NumaKarlsson
+1500? -225
+ronina9
+1411 +7
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nc6 3. Bc4 Nf6 ... 20 moves
+10+0 � RAPID � RATED
+2 weeks ago
+NumaKarlsson
+1259 -15
+josph96
+1265 +6
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nh6 3. Bc4 Qe7 ... 10 moves
+3+2 � BLITZ � RATED
+2 weeks ago
+DannyScott
+988 +7
+NumaKarlsson
+1044 -6
+Black resigned, White is victorious
+C20 King's Pawn Game: Wayward Queen Attack
+1. e4 e5 2. Qh5 Qf6 3. Bc4 Bc5 ... 6 moves
+2+1 � BULLET � RATED
+2 weeks ago
+NumaKarlsson
+813 -5
+givaldojunior33
+838 +6
+White resigned, Black is victorious
+C24 Bishop's Opening: Berlin Defense
+1. e4 e5 2. Bc4 Nf6 3. Qf3 Bc5 ... 6 moves
+2+1 � BULLET � RATED
+2 weeks ago
+NumaKarlsson
+817 -4
+Sivakumarj
+923 +6
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Qf6 3. Bc4 Nh6 ... 5 moves
+2+1 � BULLET � RATED
+2 weeks ago
+haleo
+919 +4
+NumaKarlsson
+821 -4
+Black resigned, White is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. d4 Bc5 ... 9 moves
+1+0 � BULLET � RATED
+2 weeks ago
+rozaireen
+887? -8
+NumaKarlsson
+820 +1
+Draw
+A00 Polish Opening
+1. b4 e5 2. Nc3 Qf6 3. d3 Bxb4 ... 10 moves
+1+0 � BULLET � RATED
+2 weeks ago
+NumaKarlsson
+814 +6
+iamhommenoir
+845 -6
+Time out, White is victorious
+B01 Scandinavian Defense
+1. e4 d5 2. Qf3 f6 3. exd5 c6 ... 23 moves
+1+0 � BULLET � RATED
+2 weeks ago
+serdokur
+974 +3
+NumaKarlsson
+817 -3
+Black resigned, White is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. Bc4 Bc5 ... 9 moves
+1+0 � BULLET � RATED
+2 weeks ago
+NumaKarlsson
+823 -6
+narwhal89
+828 +9
+White resigned, Black is victorious
+B01 Scandinavian Defense
+1. e4 d5 2. Qf3 Be6 3. Nc3 c6 ... 13 moves
+1+0 � BULLET � RATED
+2 weeks ago
+NumaKarlsson
+829 -6
+kosty_shkred
+826 +6
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nf6 3. Bc4 Nc6 ... 16 moves
+1+0 � BULLET � RATED
+2 weeks ago
+HariSampath_30
+816 -5
+NumaKarlsson
+823 +6
+Checkmate, Black is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. Nc3 Bc5 ... 4 moves
+1+0 � BULLET � RATED
+2 weeks ago
+NumaKarlsson
+817 +6
+meerag
+828 -9
+Time out, White is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nc6 3. Bc4 Nf6 ... 35 moves
+1+0 � BULLET � RATED
+2 weeks ago
+stefanyavila602
+821 -29
+NumaKarlsson
+812 +5
+Checkmate, Black is victorious
+A00 Clemenz Opening
+1. h3 e5 2. h4 Qf6 3. h5 Bc5 ... 5 moves
+1+0 � BULLET � RATED
+2 weeks ago
+NumaKarlsson
+819 -7
+lahcen78
+733 +7
+White resigned, Black is victorious
+B00 Owen Defense
+1. e4 b6 2. Qf3 c6 3. Bc4 e6 ... 10 moves
+1+0 � BULLET � RATED
+2 weeks ago
+NumaKarlsson
+822 -3
+FFaiyaz
+987 +3
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nf6 3. Bd3 Nc6 ... 8 moves
+1+0 � BULLET � RATED
+2 weeks ago
+lahcen78
+737 -4
+NumaKarlsson
+817 +5
+Checkmate, Black is victorious
+A00 Hungarian Opening
+1. g3 e5 2. f3 Qf6 3. g4 e4 ... 8 moves
+1+0 � BULLET � RATED
+2 weeks ago
+soymaloenelfornite
+867 +11
+NumaKarlsson
+822 -5
+Black resigned, White is victorious
+A00 Hungarian Opening
+1. g3 e5 2. Bg2 Qf6 3. Nf3 Bc5 ... 18 moves
+1+0 � BULLET � RATED
+2 weeks ago
+NumaKarlsson
+815 +7
+umittcobann
+891 -25
+Time out, White is victorious
+C00 French Defense
+1. e4 e6 2. Qf3 d5 3. exd5 Nf6 ... 30 moves
+1+0 � BULLET � RATED
+2 weeks ago
+prathima01
+850? -45
+NumaKarlsson
+810 +5
+Time out, Black is victorious
+D00 Blackmar-Diemer, Lemberger Countergambit
+1. d4 e5 2. e4 d5 3. Nc3 Nf6 ... 20 moves
+1+0 � BULLET � RATED
+2 weeks ago
+sarterdoga
+832 +6
+NumaKarlsson
+815 -5
+Black resigned, White is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. Bc4 Bc5 ... 7 moves
+1+0 � BULLET � RATED
+2 weeks ago
+AnR777
+856 +5
+NumaKarlsson
+820 -5
+Black resigned, White is victorious
+A40 Englund Gambit
+1. d4 e5 2. dxe5 d5 3. exd6 cxd6 ... 7 moves
+5+3 � BLITZ � RATED
+2 weeks ago � Svenska Knatteligan Arena
+NumaKarlsson
+1050 -6
+Jona_8
+1033 +15
+Time out, Black is victorious
+C23 Bishop's Opening: Boi Variation
+1. e4 e5 2. Bc4 Bc5 3. Qf3 Nf6 ... 45 moves
+5+3 � BLITZ � RATED
+2 weeks ago � Svenska Knatteligan Arena
+Leokungen
+1433 -10
+NumaKarlsson
+1040 +10
+Checkmate, Black is victorious
+C46 Three Knights Opening
+1. e4 e5 2. Nf3 Nc6 3. Nc3 Bc5 ... 5 moves
+5+3 � BLITZ � RATED
+2 weeks ago � Svenska Knatteligan Arena
+NumaKarlsson
+1043 -3
+PixboEmil
+1190 +10
+White resigned, Black is victorious
+B00 Nimzowitsch Defense
+1. e4 Nc6 2. Bc4 Nf6 3. Nf3 Nxe4 ... 14 moves
+5+3 � BLITZ � RATED
+2 weeks ago � Svenska Knatteligan Arena
+NumaKarlsson
+1037 +6
+Jona_8
+1044 -15
+Checkmate, White is victorious
+C42 Russian Game: Urusov Gambit
+1. e4 e5 2. Nf3 Nf6 3. Bc4 Bc5 ... 19 moves
+5+3 � BLITZ � RATED
+2 weeks ago � Svenska Knatteligan Arena
+Leokungen
+1431 +1
+NumaKarlsson
+1038 -1
+Black resigned, White is victorious
+C50 Italian Game: Giuoco Pianissimo, Italian Four Knights Variation
+1. e4 e5 2. Nf3 Nc6 3. Nc3 Bc5 ... 17 moves
+5+3 � BLITZ � RATED
+2 weeks ago � Svenska Knatteligan Arena
+NumaKarlsson
+1030 +8
+PixboEmil
+1220 -24
+Checkmate, White is victorious
+C57 Italian Game: Two Knights Defense, Knight Attack, Normal Variation
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 ... 104 moves
+5+3 � BLITZ � RATED
+2 weeks ago � Svenska Knatteligan Arena
+stefanth
+1276 -21
+NumaKarlsson
+1020 +10
+Checkmate, Black is victorious
+C50 Giuoco Piano
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 ... 6 moves
+5+3 � BLITZ � RATED
+2 weeks ago � Svenska Knatteligan Arena
+NumaKarlsson
+1025 -5
+Jona_8
+1046 +16
+White didn't move, Black is victorious
+
+
+1+0 � BULLET � RATED
+2 weeks ago
+mixingupthemedicine
+939 -36
+NumaKarlsson
+813 +7
+Checkmate, Black is victorious
+C44 Scotch Game
+1. e4 e5 2. Nf3 Nc6 3. d4 exd4 ... 20 moves
+1+0 � BULLET � RATED
+2 weeks ago
+NumaKarlsson
+816 -3
+sherttesi
+966 +3
+White resigned, Black is victorious
+C50 Giuoco Piano
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 ... 11 moves
+1+0 � BULLET � RATED
+2 weeks ago
+NumaKarlsson
+820 -4
+Eddie66
+938 +4
+White resigned, Black is victorious
+B10 Caro-Kann Defense
+1. e4 c6 2. Nf3 d5 3. exd5 cxd5 ... 8 moves
+1+0 � BULLET � RATED
+2 weeks ago
+NumaKarlsson
+813 +7
+thoemib
+871 -6
+Time out, White is victorious
+C57 Italian Game: Two Knights Defense, Knight Attack
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 ... 25 moves
+1+0 � BULLET � RATED
+2 weeks ago
+boss225
+955 +6
+NumaKarlsson
+817 -4
+Black resigned, White is victorious
+C20 King's Pawn Game: Wayward Queen Attack, Kiddie Countergambit
+1. e4 e5 2. Qh5 Nf6 3. Qxe5+ Qe7 ... 5 moves
+1+0 � BULLET � RATED
+3 weeks ago
+NumaKarlsson
+823 -6
+Mohit0233
+807 +6
+Time out, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 Nf6 3. Bc4 Nc6 ... 17 moves
+1+0 � BULLET � RATED
+3 weeks ago
+EnigmaticAli
+830 +6
+NumaKarlsson
+828 -5
+Black resigned, White is victorious
+A40 Englund Gambit
+1. d4 e5 2. Be3 Qf6 3. f4 exd4 ... 9 moves
+1+0 � BULLET � RATED
+3 weeks ago
+wakeupneo1
+854 +20
+NumaKarlsson
+834 -6
+Black resigned, White is victorious
+C31 King's Gambit Declined: Falkbeer, Milner-Barry Variation
+1. e4 e5 2. Nc3 d5 3. f4 Qf6 ... 6 moves
+1+0 � BULLET � RATED
+3 weeks ago
+NumaKarlsson
+826 +8
+BulletProof1
+964 -8
+Black resigned, White is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 f5 3. exf5 d6 ... 21 moves
+1+0 � BULLET � RATED
+3 weeks ago
+Dekkres
+953 +5
+NumaKarlsson
+829 -3
+Black resigned, White is victorious
+C40 King's Pawn Game: McConnell Defense
+1. e4 e5 2. Nf3 Qf6 3. g4 Nh6 ... 6 moves
+1+0 � BULLET � RATED
+3 weeks ago
+NumaKarlsson
+835 -6
+Lesha_2011
+805 +24
+White resigned, Black is victorious
+C20 King's Pawn Game: Napoleon Attack
+1. e4 e5 2. Qf3 d6 3. Bc4 Be6 ... 14 moves
+1+0 � BULLET � RATED
+3 weeks ago
+NumaKarlsson
+829 +6
+AnR777
+848 -6
+Time out, White is victorious
+B01 Scandinavian Defense: Mieses-Kotroc Variation
+1. e4 d5 2. exd5 Qxd5 3. Qf3 Qxf3 ... 21 moves
+1+0 � BULLET � RATED
+3 weeks ago
+Gekkeboy69
+817 +20
+NumaKarlsson
+835 -6
+Black resigned, White is victorious
+C20 King's Pawn Game: Wayward Queen Attack
+1. e4 e5 2. Qh5 Nc6 3. Bc4 g6 ... 9 moves
+1+0 � BULLET � RATED
+3 weeks ago
+NumaKarlsson
+842 -7
+Gekkeboy69
+794 +23
+White resigned, Black is victorious
+C57 Italian Game: Two Knights Defense, Knight Attack, Normal Variation
+1. e4 e5 2. Nf3 Nf6 3. Bc4 Nc6 ... 8 moves
+1+0 � BULLET � RATED
+3 weeks ago
+Dekkres
+954 -12
+NumaKarlsson
+834 +8
+Time out, Black is victorious
+C00 French Defense: Steinitz Attack
+1. e4 e6 2. e5 Qf6 3. f4 Qxf4 ... 21 moves
+1+0 � BULLET � RATED
+3 weeks ago
+NumaKarlsson
+834 �0
+wakeupneo1
+830 �0
+Draw
+B06 Modern Defense
+1. e4 g6 2. Qf3 Bg7 3. Bc4 d6 ... 8 moves
+1+0 � BULLET � RATED
+3 weeks ago
+FranHuang
+753 -23
+NumaKarlsson
+830 +4
+Time out, Black is victorious
+A40 Englund Gambit Declined, Reversed Alekhine
+1. d4 e5 2. Nf3 d5 3. e3 Nc6 ... 21 moves
+Computer analysis available
+1+0 � BULLET � RATED
+3 weeks ago
+smitshah1802
+858 +12
+NumaKarlsson
+835 -5
+Black resigned, White is victorious
+A00 Van Geet Opening: Reversed Nimzowitsch
+1. Nc3 e5 2. Nf3 d5 3. Nxe5 Qf6 ... 6 moves
+1+0 � BULLET � RATED
+3 weeks ago
+NumaKarlsson
+829 +6
+smitshah1802
+873 -15
+Checkmate, White is victorious
+B02 Alekhine Defense
+1. e4 Nf6 2. Qf3 d5 3. exd5 Ne4 ... 23 moves

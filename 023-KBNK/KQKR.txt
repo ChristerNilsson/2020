@@ -1,0 +1,21 @@
+Kb8 Rb7 Kc6 Qa5
+Kc8 Qa6
+Ra7 Qd8++
+Rc7 Qxc7+
+Rd7 Kxd7
+Re7 Qd8+
+Rg7 Qe5+
+
+Rf7 Qe5+ Kc8 Qe8++
+         Ka8 Qa1+ Ra7 Qh8++
+                  Kb8 Qh8+ Ka7 Qd4+ Ka6 Qb6++
+                                    Ka8 Qa4+ Kb8 Qb3+
+                                    Kb8 Qb2+ Kc8 Qh8+
+Rh7 Qb4+ Ka8 Qb3+ Kb8 Qb2+ Ka7 Qa1+ Kb8 Qb1+
+         Ka7 Qb3+ Kb8 Qb2+ 
+Rb6+ Kxb6
+Rb5 Qxb5+
+Rb4 Qxb4+
+Rb2 Qe5+
+Rb3 ???
+Rb1 ???
