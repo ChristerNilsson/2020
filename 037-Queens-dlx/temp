@@ -1,0 +1,18 @@
+| This data produced by queens-dlx 4
+r2 c2 r1 c1 r3 c3 r0 c0 | a0 b0 a1 b1 a2 b2 a3 b3 a4 b4 a5 b5
+r0 c0 a0 b3
+r0 c1 a1 b4
+r0 c2 a2 b5
+r0 c3 a3
+r1 c0 a1 b2
+r1 c1 a2 b3
+r1 c2 a3 b4
+r1 c3 a4 b5
+r2 c0 a2 b1
+r2 c1 a3 b2
+r2 c2 a4 b3
+r2 c3 a5 b4
+r3 c0 a3 b0
+r3 c1 a4 b1
+r3 c2 a5 b2
+r3 c3 b3
