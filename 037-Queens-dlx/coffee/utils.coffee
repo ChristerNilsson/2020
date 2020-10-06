@@ -1,13 +1,7 @@
-#import Constraint  from './interfaces'
-#import Row from './interfaces'
-# import isSimpleConstraint from './interfaces'
-# import isComplexConstraint from './interfaces'
-#import SearchConfig  from './interfaces'
+range = (n) -> [0...n]
 
-isSimpleConstraint = (arg) -> return arg.row != undefined 
+isSimpleConstraint = (arg) -> return arg.row != undefined
 isComplexConstraint = (arg) -> return arg.primaryRow != undefined and arg.secondaryRow != undefined
-
-# type BinaryInt = 0 | 1 
 
 binaryToSparseRow  = (binaryRow, offset = 0) ->
 	sparseRow = []
@@ -33,7 +27,8 @@ getParams  = (constraint) ->
 
 getSearchConfig = (numSolutions, constraints) ->
 	{ numPrimary, numSecondary } = getParams(constraints[0])
-	sparseConstraints: Row<T>[] = constraints.map((c) => 
+	start = new Date()
+	sparseConstraints = constraints.map((c) => 
 		data = c.data
 		coveredColumns= []
 		if (isSimpleConstraint(c)) 
@@ -46,6 +41,7 @@ getSearchConfig = (numSolutions, constraints) ->
 			coveredColumns
 		}
 	)
+	console.log 'getSearchConfig',(new Date())-start
 
 	return {
 		numPrimary,
@@ -53,3 +49,5 @@ getSearchConfig = (numSolutions, constraints) ->
 		numSolutions,
 		rows: sparseConstraints
 	}
+
+module.exports = {getSearchConfig, range}

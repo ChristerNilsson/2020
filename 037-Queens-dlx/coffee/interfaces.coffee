@@ -45,8 +45,6 @@
 #   data: T
 # }
 
-# isSimpleConstraint = (arg) -> return arg.row != undefined
-
-# isComplexConstraint = (arg) -> return arg.primaryRow != undefined and arg.secondaryRow != undefined
-
 #export type Constraint<T = any> = SimpleConstraint<T> | ComplexConstraint<T>
+
+#module.exports = {isSimpleConstraint, isComplexConstraint}

@@ -7,7 +7,7 @@
 #  * and in order to work around the lack of `goto` in JS
 #  */
 
-# import { Column, Node, Result, SearchConfig } from './interfaces'
+{ SearchConfig } = require './interfaces'
   
 SearchState = 
 	FORWARD : 0
@@ -16,7 +16,7 @@ SearchState =
 	RECOVER : 3
 	DONE : 4
 
-export search = (config) ->
+search = (config) ->
 	{ numSolutions, numPrimary, numSecondary, rows } = config
 	root = {}
 
@@ -252,4 +252,4 @@ export search = (config) ->
 
 	return solutions
 
-export { search }
+module.exports = { search }
