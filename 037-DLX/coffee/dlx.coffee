@@ -5,8 +5,6 @@
 # Code runs in a state machine in order to avoid recursion
 # and in order to work around the lack of `goto` in JS
 
-#{ getSearchConfig, range } = require './utils'
-
 SearchState = 
 	FORWARD : 0
 	ADVANCE : 1
@@ -16,8 +14,9 @@ SearchState =
 
 range = (n) -> [0...n]
 
-search = (config) -> # rows: hash with elements "r01c01":[0,59,118,177]
-	{ numSolutions, numPrimary, numSecondary, rows } = config
+search = (config) -> # rows: hash with elements "aa":[0,59,118,177]
+	{ numSolutions, primaries, secondaries, rows } = config
+	
 	root = {}
 
 	colArray = [root]
@@ -27,67 +26,53 @@ search = (config) -> # rows: hash with elements "r01c01":[0,59,118,177]
 	currentSearchState = SearchState.FORWARD
 	running = true
 	level = 0
-	choice = []
+	choices = []
 	bestCol = null
 	currentNode = null
+	nodes = 0 
+	snapshots = []
 
 	readColumnNames = () ->
 		# Skip root node
 		curColIndex = 1
 
-		for i in range numPrimary
+		for primary in primaries
 			head = {}
 			head.up = head
 			head.down = head
-
-			column = {
-				len: 0,
-				head
-			}
-
+			column = {head, len:0, key:primary} 
 			column.prev = colArray[curColIndex - 1]
 			colArray[curColIndex - 1].next = column
-
 			colArray[curColIndex] = column
-			curColIndex = curColIndex + 1
+			curColIndex++
 
 		lastCol = colArray[curColIndex - 1]
-		# Link the last primary constraint to wrap back into the root
+		# Link the last primaries constraint to wrap back into the root
 		lastCol.next = root
 		root.prev = lastCol
 
-		for i in range numSecondary
+		for secondary in secondaries
 			head = {}
 			head.up = head
 			head.down = head
-
-			column = {
-				head,
-				len: 0
-			}
-
+			column = {head, len:0, key:secondary}
 			column.prev = column
 			column.next = column
-
 			colArray[curColIndex] = column
-			curColIndex = curColIndex + 1
+			curColIndex++
 
 	readRows  = () ->
 		curNodeIndex = 0
-		i=0
 		for key,row of rows
-		#for i in range rows.length
-		#	row = rows[i]
 			rowStart = undefined
 
-			for columnIndex in row #.coveredColumns # of
+			for columnIndex in row
 				node = {}
 				node.left = node
 				node.right = node
 				node.down = node
 				node.up = node
-				node.index = i
-				node.data = key #row.data
+				node.data = key
 
 				nodeArray[curNodeIndex] = node
 
@@ -106,14 +91,13 @@ search = (config) -> # rows: hash with elements "r01c01":[0,59,118,177]
 				col.head.up = node
 				node.down = col.head
 
-				col.len = col.len + 1
-				curNodeIndex = curNodeIndex + 1
+				col.len++
+				curNodeIndex++
 
 			rowStart.left = nodeArray[curNodeIndex - 1]
 			nodeArray[curNodeIndex - 1].right = rowStart
-			i++
 
-	cover = (c) ->
+	cover = (c) -> # c is a column
 		l = c.prev
 		r = c.next
 
@@ -132,7 +116,7 @@ search = (config) -> # rows: hash with elements "r01c01":[0,59,118,177]
 				uu.down = dd
 				dd.up = uu
 
-				nn.col.len -= 1
+				nn.col.len--
 				nn = nn.right
 			rr = rr.down
 
@@ -148,7 +132,7 @@ search = (config) -> # rows: hash with elements "r01c01":[0,59,118,177]
 				uu.down = nn
 				dd.up = nn
 
-				nn.col.len += 1
+				nn.col.len++
 				nn = nn.left
 			rr = rr.up
 
@@ -159,33 +143,67 @@ search = (config) -> # rows: hash with elements "r01c01":[0,59,118,177]
 		l.next = c
 		r.prev = c
 
-	pickBestColum = () ->
-		lowestLen = root.next.len
-		lowest = root.next
+	pickBestColumn = -> # Only R and C columns, not A and B
 		curCol = root.next
+		bestCol = curCol
 		while curCol != root
-			length = curCol.len
-			if length < lowestLen
-				lowestLen = length
-				lowest = curCol
+			if curCol.len < bestCol.len then bestCol = curCol
 			curCol = curCol.next
-		bestCol = lowest
 
-	forward = () ->
-		pickBestColum()
-		cover bestCol
-
+	forward = ->
+		pickBestColumn()
 		currentNode = bestCol.head.down
-		choice[level] = currentNode
-
+		choices[level] = currentNode
+		cover bestCol
 		currentSearchState = SearchState.ADVANCE
 
-	recordSolution = () -> solutions.push (choice[l].data for l in range level+1)
+	recordSolution = -> 
+		#solutions.push 0
+		#solutions.push (choices[l].data for l in range level+1)
+		solutions.push (choices[l].data for l in range level+1).join ' '
+
+		curCol = root.next
+		bestCol = curCol
+		while curCol != root
+			if curCol.len < bestCol.len then bestCol = curCol
+			curCol = curCol.next
+
+	dumpNode = (action) ->
+		optionsP = {}
+		col = root.next
+		while col != root
+			p = col.head.down
+			keys = []
+			while p != col.head
+				keys.push p.data
+				p = p.down
+			optionsP[col.key] = keys.join ' '
+			col = col.next
+
+		optionsS = {}
+		for i in range secondaries.length
+			col = colArray[17+i]
+			p = col.head.down
+			keys = []
+			while p != col.head
+				keys.push p.data
+				p = p.down
+			optionsS[col.key] = keys.join ' ' if keys.length > 0
+			col = col.next
+
+		result = {}
+		result.action = action
+		#result.choices = (choices[l].data for l in range level+1).join ' '
+		result.choices = (c.data for c in choices).join ' '
+		result.primaries = optionsP
+		result.secondaries = optionsS
+		snapshots.push result
 
 	advance = () ->
 		if currentNode == bestCol.head
 			currentSearchState = SearchState.BACKUP
 			return
+		nodes++
 		pp = currentNode.right
 		while pp != currentNode
 			cover pp.col
@@ -199,21 +217,17 @@ search = (config) -> # rows: hash with elements "r01c01":[0,59,118,177]
 				currentSearchState = SearchState.RECOVER
 			return
 
-		level = level + 1
+		level++
 		currentSearchState = SearchState.FORWARD
 
 	backup = () ->
 		uncover bestCol
-
 		if level == 0
 			currentSearchState = SearchState.DONE
 			return
-
-		level = level - 1
-
-		currentNode = choice[level]
+		level--
+		currentNode = choices[level]
 		bestCol = currentNode.col
-
 		currentSearchState = SearchState.RECOVER
 
 	recover = () ->
@@ -221,8 +235,9 @@ search = (config) -> # rows: hash with elements "r01c01":[0,59,118,177]
 		while pp != currentNode
 			uncover pp.col
 			pp = pp.left
+
 		currentNode = currentNode.down
-		choice[level] = currentNode
+		choices[level] = currentNode
 		currentSearchState = SearchState.ADVANCE
 
 	done = () -> running = false
@@ -237,52 +252,40 @@ search = (config) -> # rows: hash with elements "r01c01":[0,59,118,177]
 
 	readColumnNames()
 	readRows()
-
+	dumpNode ['forward','advance','backtrack','recover','done'][currentSearchState]
+	dumpNode ['forward','advance','backtrack','recover','done'][currentSearchState]
 	while running
 		currentStateMethod = stateMethods[currentSearchState]
 		currentStateMethod()
-
-	return solutions
+		if currentSearchState in [0,2,3,4] then dumpNode ['forward','advance','backtrack','recover','done'][currentSearchState]
+	
+	#console.log JSON.stringify dump
+	#console.log "#{nodes} nodes #{solutions.length} solutions"
+	return {solutions,snapshots}
 
 getSearchConfig = (numSolutions, constraints) ->
-	numPrimary = constraints.primary.length
-	numSecondary = constraints.secondary.length
-	{numPrimary, numSecondary, numSolutions, rows: constraints.bits}
+	primaries = constraints.primaries
+	secondaries = constraints.secondaries
+	{primaries, secondaries, numSolutions, rows: constraints.entries}
 
-# findAll = (constraints) -> search getSearchConfig Infinity, constraints
+findAll = (constraints) -> search getSearchConfig Infinity, constraints
 findOne = (constraints) -> search getSearchConfig 1, constraints
 # find = (constraints, numSolutions) -> search getSearchConfig numSolutions, constraints
 # findRaw = (config) -> search config
 
-makeData = (lines) ->
-	lines = lines.split '\n'
-	while true
-		comment = lines.shift()
-		if comment[0] != '|' 
-			header = comment
-			break
-	header = header.trim().split '|'
-	primary = header[0].trim().split ' '
-	secondary = if header.length == 2 then header[1].trim().split ' ' else []
+makeData = ({header,primaries,secondaries,options}) ->
+	primaries = primaries.split ' '
+	secondaries = secondaries.split ' '
 	index = {}
-	index[p] = i for p,i in primary.concat secondary
-	bits = {}
-	for line in lines
-		if line == '' then continue
-		line = line.split ' '
-		key = line.shift()
-		bits[key] = (index[item] for item in line)
-	{primary,secondary,bits}
+	index[p] = i for p,i in primaries.concat secondaries
+	entries = {}
+	entryCount = 0
+	for option in options
+		option = option.split ' '
+		key = option.shift()		
+		entryCount += option.length
+		entries[key] = (index[item] for item in option)
+	console.log "#{primaries.length}+#{secondaries.length} items, #{options.length} options, #{entryCount} entries"
+	{primaries,secondaries,entries}
 
-fs = require "fs"
-lines = fs.readFileSync(0).toString()
-# console.log lines 
-data = makeData lines
-#console.log JSON.stringify data
-
-console.time 'solve'
-#console.log JSON.stringify getSearchConfig 1,data
-for i in range 1
-	oneSolution = findOne data
-console.timeEnd 'solve'
-console.log oneSolution
+module.exports = {makeData, search, getSearchConfig, findAll, findOne}

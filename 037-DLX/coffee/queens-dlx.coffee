@@ -1,36 +1,29 @@
 # Queens DLX
 
-range = (b) -> [0...b] 
-encode = (x) ->	x #"0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"[x]
+range = (b) -> [0...b]
+ENCODE = (i) ->	"ABCDEFGHIJKLMNOPQRSTUVWXYZ"[i]
+encode = (i) ->	"abcdefghijklmnopqrstuvwxyz"[i]
 
-execute = (n) ->
+execute = (n='8') ->
 	n = parseInt n
-	result = []
-	result.push "| This data produced by queens-dlx #{n}"
+	result = {}
+	result.header = "This data produced by queens-dlx #{n}"
 
-	s = "" 
-	for j in range n
-		t = (if j&1 then n-1-j else n+j) >> 1
-		s += "r#{encode t} c#{encode t} "
+	cx = ("C#{ENCODE i}" for i in range n)
+	rx = ("R#{j+1}" for j in range n)
+	result.primaries = (cx.concat rx).join ' '
 	
-	s += "|"
-	for j in range n+n-2
-		s += " a#{encode j} b#{encode j}"
-	result.push s
+	ax = ("A#{ENCODE i}" for i in range n+n-1)
+	bx = ("B#{ENCODE i}" for i in range n+n-1)
+	result.secondaries = (ax.concat bx).join ' '
 
-	for j in range n 
-		for k in range n
-			key = "r#{encode(j)}c#{encode(k)}"
-			s = "#{key} r#{encode j} c#{encode k}"
-			t = j + k
-			if t < n+n-2 then s += " a#{encode t}"
-			t = n-1-j+k
-			if t < n+n-2 then s += " b#{encode t}"
-			result.push s
-	
-	console.log result.join "\n"
+	options = []
+	for i in range n
+		for j in range n
+			key = "#{encode(i)}#{j+1}"
+			options.push "#{key} C#{ENCODE i} R#{j+1} A#{ENCODE i+j} B#{ENCODE n-1-i+j}"
+	result.options = options
+	console.log result
+	result
 
-if process.argv.length == 3
-	execute process.argv[2]
-else
-	execute 8
+module.exports = {execute}

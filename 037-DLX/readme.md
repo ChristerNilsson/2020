@@ -1,3 +1,7 @@
+# front
+
+Denna filen håller ihop dlx och sudoku-dlx, för att minimera overhead och få snabb exekveringstid.
+
 # DLX
 
 Originalkod hittas här: https://github.com/TimBeyer/node-dlx
@@ -28,7 +32,7 @@ Prestanda
 
 node js/sudoku-dlx 000000007004020600800000310000002900040090030009506000010000008006050200700000060 | node js/dlx
 
-./all.bat kör de tio första problemen från hardest_1106. Detta tar 4.3 sek. 4.3s/10000 = 0.43 ms = 430 us per problem
+./all.bat kör de tio första problemen från hardest_1106. Detta tar 364ms. 36 us per problem, pga faktor 1000
 
 tdoku kör 375 problem på 35ms. Detta ger 0.093ms = 93 us per problem.
 
