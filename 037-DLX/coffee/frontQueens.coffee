@@ -8,11 +8,19 @@ if process.argv.length == 3 then n = process.argv[2]
 data = execute n
 #console.log data
 constraints = makeData data
-#console.log constraints
+
+constraints.primaries = constraints.primaries.split ' '
+constraints.secondaries = constraints.secondaries.split ' '
+
+console.log constraints
 
 #console.log JSON.stringify getSearchConfig 1,constraints
 {solutions,snapshots} = findOne constraints
 # console.timeEnd 'cpu'
 #console.log snapshots
+
+constraints.primaries = constraints.primaries.join ' '
+constraints.secondaries = constraints.secondaries.join ' '
+
 fs.writeFileSync '8queens.json', JSON.stringify {constraints, snapshots}
 if solutions.length<=92 then console.log solutions

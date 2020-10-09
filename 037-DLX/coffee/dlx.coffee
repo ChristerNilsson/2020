@@ -97,6 +97,12 @@ search = (config) -> # rows: hash with elements "aa":[0,59,118,177]
 			rowStart.left = nodeArray[curNodeIndex - 1]
 			nodeArray[curNodeIndex - 1].right = rowStart
 
+	iterate = (dir,node,f) ->
+		rr = node[dir]
+		while rr != node
+			f rr
+			rr = rr[dir]
+
 	cover = (c) -> # c is a column
 		l = c.prev
 		r = c.next
@@ -105,36 +111,24 @@ search = (config) -> # rows: hash with elements "aa":[0,59,118,177]
 		l.next = r
 		r.prev = l
 
-		# From to to bottom, left to right unlink every row node from its column
-		rr = c.head.down
-		while rr != c.head
-			nn = rr.right
-			while nn != rr
+		# From top to bottom, left to right unlink every row node from its column
+		iterate 'down', c.head, (rr) ->
+			iterate 'right', rr, (nn) ->
 				uu = nn.up
 				dd = nn.down
-
 				uu.down = dd
 				dd.up = uu
-
 				nn.col.len--
-				nn = nn.right
-			rr = rr.down
 
 	uncover  = (c) ->
 		# From bottom to top, right to left relink every row node to its column
-		rr = c.head.up
-		while rr != c.head
-			nn = rr.left
-			while nn != rr
+		iterate 'up', c.head, (rr) ->
+			iterate 'left', rr, (nn) ->
 				uu = nn.up
 				dd = nn.down
-
 				uu.down = nn
 				dd.up = nn
-
 				nn.col.len++
-				nn = nn.left
-			rr = rr.up
 
 		l = c.prev
 		r = c.next
@@ -144,11 +138,9 @@ search = (config) -> # rows: hash with elements "aa":[0,59,118,177]
 		r.prev = c
 
 	pickBestColumn = -> # Only R and C columns, not A and B
-		curCol = root.next
-		bestCol = curCol
-		while curCol != root
+		bestCol = root.next
+		iterate 'next', root, (curCol)->
 			if curCol.len < bestCol.len then bestCol = curCol
-			curCol = curCol.next
 
 	forward = ->
 		pickBestColumn()
@@ -157,44 +149,27 @@ search = (config) -> # rows: hash with elements "aa":[0,59,118,177]
 		cover bestCol
 		currentSearchState = SearchState.ADVANCE
 
-	recordSolution = -> 
-		#solutions.push 0
-		#solutions.push (choices[l].data for l in range level+1)
-		solutions.push (choices[l].data for l in range level+1).join ' '
+	recordSolution = -> solutions.push (choices[l].data for l in range level+1).join ' '
 
-		curCol = root.next
-		bestCol = curCol
-		while curCol != root
-			if curCol.len < bestCol.len then bestCol = curCol
-			curCol = curCol.next
-
-	dumpNode = (action) ->
+	dumpNode = () ->
 		optionsP = {}
-		col = root.next
-		while col != root
-			p = col.head.down
+		iterate 'next',root,(col)->
 			keys = []
-			while p != col.head
+			iterate 'down',col.head,(p)->
 				keys.push p.data
-				p = p.down
-			optionsP[col.key] = keys.join ' '
-			col = col.next
+			optionsP[col.key] = keys.join ' ' if keys.length > 0
 
 		optionsS = {}
 		for i in range secondaries.length
 			col = colArray[17+i]
-			p = col.head.down
 			keys = []
-			while p != col.head
+			iterate 'down',col.head,(p)->
 				keys.push p.data
-				p = p.down
 			optionsS[col.key] = keys.join ' ' if keys.length > 0
 			col = col.next
 
 		result = {}
-		result.action = action
-		#result.choices = (choices[l].data for l in range level+1).join ' '
-		result.choices = (c.data for c in choices).join ' '
+		result.choices = ((c.data for c in choices).join ' ').trim()
 		result.primaries = optionsP
 		result.secondaries = optionsS
 		snapshots.push result
@@ -204,10 +179,8 @@ search = (config) -> # rows: hash with elements "aa":[0,59,118,177]
 			currentSearchState = SearchState.BACKUP
 			return
 		nodes++
-		pp = currentNode.right
-		while pp != currentNode
-			cover pp.col
-			pp = pp.right
+
+		iterate 'right',currentNode, (pp) -> cover pp.col
 
 		if root.next == root
 			recordSolution()
@@ -226,16 +199,13 @@ search = (config) -> # rows: hash with elements "aa":[0,59,118,177]
 			currentSearchState = SearchState.DONE
 			return
 		level--
+
 		currentNode = choices[level]
 		bestCol = currentNode.col
 		currentSearchState = SearchState.RECOVER
 
 	recover = () ->
-		pp = currentNode.left
-		while pp != currentNode
-			uncover pp.col
-			pp = pp.left
-
+		iterate 'left',currentNode, (pp) -> uncover pp.col
 		currentNode = currentNode.down
 		choices[level] = currentNode
 		currentSearchState = SearchState.ADVANCE
@@ -252,15 +222,12 @@ search = (config) -> # rows: hash with elements "aa":[0,59,118,177]
 
 	readColumnNames()
 	readRows()
-	dumpNode ['forward','advance','backtrack','recover','done'][currentSearchState]
-	dumpNode ['forward','advance','backtrack','recover','done'][currentSearchState]
+	dumpNode()
 	while running
 		currentStateMethod = stateMethods[currentSearchState]
 		currentStateMethod()
-		if currentSearchState in [0,2,3,4] then dumpNode ['forward','advance','backtrack','recover','done'][currentSearchState]
-	
-	#console.log JSON.stringify dump
-	#console.log "#{nodes} nodes #{solutions.length} solutions"
+		if currentSearchState == 0 then dumpNode()
+	dumpNode()
 	return {solutions,snapshots}
 
 getSearchConfig = (numSolutions, constraints) ->
@@ -274,10 +241,10 @@ findOne = (constraints) -> search getSearchConfig 1, constraints
 # findRaw = (config) -> search config
 
 makeData = ({header,primaries,secondaries,options}) ->
-	primaries = primaries.split ' '
-	secondaries = secondaries.split ' '
+	prim = primaries.split ' '
+	sec = secondaries.split ' '
 	index = {}
-	index[p] = i for p,i in primaries.concat secondaries
+	index[p] = i for p,i in prim.concat sec
 	entries = {}
 	entryCount = 0
 	for option in options
@@ -285,7 +252,7 @@ makeData = ({header,primaries,secondaries,options}) ->
 		key = option.shift()		
 		entryCount += option.length
 		entries[key] = (index[item] for item in option)
-	console.log "#{primaries.length}+#{secondaries.length} items, #{options.length} options, #{entryCount} entries"
+	console.log "#{prim.length}+#{sec.length} items, #{options.length} options, #{entryCount} entries"
 	{primaries,secondaries,entries}
 
 module.exports = {makeData, search, getSearchConfig, findAll, findOne}

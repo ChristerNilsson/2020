@@ -12,6 +12,7 @@ for line in lines.split '\n'
 	data = execute line
 	#console.log data
 	constraints = makeData data
+	console.log 'constraints',constraints
 
 	#console.log JSON.stringify getSearchConfig 1,constraints
 	oneSolution = findOne constraints
