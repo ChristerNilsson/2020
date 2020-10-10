@@ -12,6 +12,8 @@ För att unikt identifiera varje rad (option) innehåller första kolumnen en un
 
 Det är denna som visas i lösningen. T ex kan den innehålla a4 (rad kolumn) i queens och 231 i sudoku (rad kolumn siffra)
 
+Hur kan man vara säker på att hitta alla lösningar om man använder sig av pickBestChoice i dlx.coffee?
+
 # Queens-dlx
 
 node js/queens-dlx.js 8 | node js/dlx.js
@@ -40,3 +42,4 @@ Om man skriver om dlx.coffee i C++ borde man kunna uppnå ungefär samma hastigh
 Detta utan komplicerad användning av simd och dpll.
 
 all.bat kraschar intermittent ibland. Vet ej varför.
+
