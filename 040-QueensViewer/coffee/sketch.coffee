@@ -1,9 +1,11 @@
 constraints = null
 snapshots = null
 current = 0
+yellowKey = ''
+MODE = 0 # 0=compact 1=expanded
 
 explanations = []
-explanations.push 'There are 16 primary items, 8 columns and 8 rows\nItem CA is chosen\nOption a1 is first\nPress Right Arrow'
+explanations.push 'There are 16 primary items, 8 columns and 8 rows\n\nThe matrix is actually 64 options x 46 items\nIt is shown compressed here\nPress Space to toggle View Mode\n\nItem CA is chosen\nOption a1 is first\nPress Right Arrow to see option a1 selected'
 explanations.push 'Items CA and R1 are hidden\nItem CB is chosen\nOption b3 is selected'
 explanations.push 'Items CB and R3 are hidden\nShortest item is CC\nOption c5 is selected'
 explanations.push 'Items CC and R5 are hidden\nShortest item is CF\nOption f4 is selected'
@@ -19,11 +21,18 @@ setColor = (item, options) -> fill if options.includes item then 'black' else 'r
 drawChessBoard = () ->
 	R = 50
 	x = width/2-4*R
-	y = height/2-R
+	y = 300
+
 	for i in range 8
 		for j in range 8
 			fill if (i+j)%2==0 then 'white' else 'black'
-			rect x+R*(i),y+R*(j),R,R
+			rect x+R*i,y+R*j,R,R
+
+	fill 'black'
+	for i in range 8
+		text 8-i,x-R*0.2,y+R*(i+0.5)
+		text 'abcdefgh'[i],x+R*(i+0.5),y+8.3*R
+
 	fill 'green'
 	textSize 24
 	choices = snapshots[current].choices.trim().split ' '
@@ -38,18 +47,19 @@ drawChessBoard = () ->
 		fill if index == choices.length-1 then 'green' else 'yellow'
 		text c,x+R*i,y+R*j
 
+	drawYellowLine()
+
 preload = ->
 	fetch "8queens.json"
 		.then (response) => response.json() 
 		.then (json) => 
 			{constraints,snapshots} = json
 			console.log json
-			xdraw()
 
 setup = ->
-	createCanvas 1200,750
+	createCanvas 1180,1080
 
-drawOptions = (prompt,offset,w,items) ->
+drawOptions = (prompt, offset, w, constraints, items) ->
 
 	textAlign LEFT,CENTER
 	fill 'yellow'
@@ -64,20 +74,22 @@ drawOptions = (prompt,offset,w,items) ->
 		text n, offset+120,50
 
 	stroke 'yellow'
+	strokeWeight 1
 	line offset+25*0.7,60,offset+w+10,60
 	line offset+25*0.7,60,offset+w+10,60
 	noStroke()
 
-	i=0
 	textAlign CENTER,CENTER
-	for key,option of items
-		option = option.split ' '
+
+	for key,i in constraints
 		fill 'yellow'
 		text key,offset+25+25*i,50+25	
-		for item,j in option
-			fill 'black'
-			text item,offset+25+25*i,100+25*j
-		i++
+		if MODE == 0
+			if items[key]
+				option = items[key].split ' '
+				for item,j in option
+					fill 'black'
+					text item,offset+25+25*i,100+25*j
 
 showChoices = ->
 	fill 'white'
@@ -90,7 +102,44 @@ showChoices = ->
 	for c,i in snapshots[current].choices.trim().split ' '
 		text c,40+40*i,28
 
-xdraw = ->
+drawLinks = (offset, entries, constraints, items) ->
+	fill 'black'
+	textSize 12
+	keys = _.keys entries
+	stroke 'black'
+
+	for key,i in keys
+		y = 100+15*i
+		line 0,y,width,y
+
+	for key,i in constraints
+		x = offset + 25 + 25 * i
+		stroke 'black'
+		line x,100,x,height
+
+drawExpanded = (offset, entries, constraints, items) ->
+	fill 'black'
+	textSize 12
+	keys = _.keys entries
+	stroke 'black'
+	for key,i in keys
+		y = 100+15*i
+
+	for key,i in constraints
+		x = offset + 25 + 25 * i
+		stroke 'black'
+		if items[key]
+			option = items[key].split ' '
+			for item in option
+				j = keys.indexOf item
+				y = 100+15*j
+				stroke 128
+				line x,y-8,x,y+8
+				line x-8,y,x+8,y
+				noStroke()
+				text item,x,y
+
+draw = ->
 	bg 0.5
 	if not constraints then return
 
@@ -99,25 +148,70 @@ xdraw = ->
 	fill 'yellow'
 
 	snapshot = snapshots[current]	
-	drawOptions 'primary items',  0*25,  16*25, snapshot.primaries
-	drawOptions 'secondary items',16*25, 30*25, snapshot.secondaries
+	drawOptions 'primary items',  0*25,  16*25, constraints.primaries.split(' '),   snapshot.primaries
+	drawOptions 'secondary items',16*25, 30*25, constraints.secondaries.split(' '), snapshot.secondaries
 
-	drawChessBoard()
+	if MODE == 0 then drawChessBoard()
 
 	fill 'black'
 	textSize 32
 	showChoices()
 	textAlign RIGHT,CENTER
 	text "snapshot #{current} of #{snapshots.length-1}",width-40,25
+	textAlign CENTER,CENTER
+	text 'Dancing Links',width/2,25
 
-	textAlign LEFT,TOP
-	textSize 14
-	fill 'white'
-	text explanations[current],15,100+8*25
+	if MODE == 0
+		textAlign LEFT,TOP
+		textSize 14
+		fill 'white'
+		text explanations[current],15,100+8*25
+
+	if MODE == 1
+		drawLinks    0*25,  constraints.entries, constraints.primaries.split(' '),   snapshot.primaries
+		drawLinks    16*25, constraints.entries, constraints.secondaries.split(' '), snapshot.secondaries
+		drawExpanded 0*25,  constraints.entries, constraints.primaries.split(' '),   snapshot.primaries
+		drawExpanded 16*25, constraints.entries, constraints.secondaries.split(' '), snapshot.secondaries
 
 keyPressed = ->
+	if key==' '
+		MODE = 1 - MODE
+		return
 	if key=='ArrowLeft' then current--
 	if key=='ArrowRight' then current++
 	if current < 0 then current = 0
 	if current >= snapshots.length then current = snapshots.length-1
-	xdraw()
+	draw()
+
+drawLine = (i1,j1,i2,j2) ->
+	R = 50
+	x = width/2-4*R
+	y = 300 
+	line x+R*(i1+0.5),y+R*(j1+0.5),x+R*(i2+0.5),y+R*(j2+0.5)
+
+mouseMoved = ->
+	yellowKey = ''
+	if 50 < mouseY < 300
+		for key,index in constraints.primaries.split ' '
+			if 25*(index+0.5) < mouseX < 25*(index+1.5) then yellowKey = key
+		for key,index in constraints.secondaries.split ' '
+			if 25*(index+16.5) < mouseX < 25*(index+17.5) then yellowKey = key
+
+drawYellowLine = ->
+	key = yellowKey
+	if key == '' then return
+	stroke 255,255,0,128
+	strokeWeight 25
+	if key[0] in "CR"
+		i = 'ABCDEFGH'.indexOf key[1]
+		j = '12345678'.indexOf key[1]
+		if key[0] == 'C' then drawLine i,0,i,7
+		if key[0] == 'R' then drawLine 0,7-j,7,7-j
+	if key[0] in "AB"
+		i = 'ABCDEFGHIJKLMNO'.indexOf key[1]
+		if key[0] == 'A'
+			if i < 7 then drawLine 0,7-i,i,7 else drawLine i-7,0, 7,14-i
+		if key[0] == 'B'
+			if i < 7 then drawLine 7,7-i,7-i,7 else drawLine 0,14-i,14-i,0
+	noStroke()
+	strokeWeight 1

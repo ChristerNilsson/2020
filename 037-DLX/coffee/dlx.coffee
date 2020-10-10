@@ -103,7 +103,7 @@ search = (config) -> # rows: hash with elements "aa":[0,59,118,177]
 			f rr
 			rr = rr[dir]
 
-	cover = (c) -> # c is a column
+	cover = (c) -> # c is a column. Pls observe, left and right are never touched.
 		l = c.prev
 		r = c.next
 

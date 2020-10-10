@@ -1,27 +1,24 @@
 # Queens Viewer
 
-I'm trying to illustrate how Dancing Links by Donald Knuth works graphically, using N-Queens.
+I'm trying to animate [Dancing Links](https://www-cs-faculty.stanford.edu/~knuth/programs/dlx1.w) by Donald Knuth, using the [Eight Queens Puzzle](https://en.wikipedia.org/wiki/Eight_queens_puzzle)
 
-The clever choice of options ordering is too smart in QUEENS-DLX by Knuth. No backtracking occurs below n=16. I decided to start with a naive order. Now backtracking happens even for n=8.
+The clever choice of options ordering is too smart in [QUEENS-DLX](https://www-cs-faculty.stanford.edu/~knuth/programs/queens-dlx.w) by Knuth. No backtracking occurs below n=16. I decided to start with a naive order. Now backtracking happens all the time even for n=8.
 
-* Use left and right arrow keys to navigate amongst the snapshots.
-* Black labels shows possible moves. Ones
-* The red labels are being removed. A one is replaced by a zero.
+* Black labels shows possible moves
 
 ## Primary items
 
-Must be used. All rows and all columns must be covered.
+Mandatory. All rows and all columns must be covered exactly once
+
+* RA..RH rows (8)
+* CA..CH columns (8)
 
 ## Secondary items
 
-Not mandatory. Not more than one queen per diagonal.
+Not mandatory. Diagonals can be covered at most once
 
-## Items (8 + 8 + 15 + 15 = 46)
-
-* RA..RH rows
-* CA..CH columns
-* AA..AO left diagonals
-* BA..BO right diagonals
+* AA..AO left diagonals (15)
+* BA..BO right diagonals (15)
 
 The four corner diagonals, AA, AO, BA and BO have only one option, so they are actually not needed. No risk for two queens on these.
 
@@ -40,36 +37,31 @@ The four corner diagonals, AA, AO, BA and BO have only one option, so they are a
 
 When all queens are placed on the board and in legal positions, the first solutions has been found. This viewer only shows the first solution.
 
-## Mousemove
+## Mouse
 
-Use the mouse to see how everything is connected.
+Use the mouse to understand primary and secondary items
 
-## Explanations
+## Keyboard
 
-### step 1
-All columns in primary items have eight options.
-The first option in CA is chosen, a1.
+* Use Left Arrow and Right Arrow to navigate amongst the snapshots.
+* Use Space to toogle View Mode between compact and expanded
 
-Now we have seven items with six options each.
-b3 is chosen.
+## Snapshots
 
-### step 2
+A JSON file is used. Some extracted lines are shown below
+```
+constraints:
+	entries: {aa:[0, 8, 16, 38]}
+	primaries: "CA CB CC CD CE CF CG CH R1 R2 R3 R4 R5 R6 R7 R8"
+	secondaries: "AA AB AC AD AE AF AG AH AI AJ AK AL AM AN AO BA BB BC BD BE BF BG BH BI BJ BK BL BM BN BO"
+snapshots:
+	3: choices: "a1 b3 c5"
+	   primaries: {CD: "d2 d7 d8", CE: "e2 e4 e8", CF: "f4", CG: "g2 g4 g6", CH: "h2 h4 h6 h7}
+	   secondaries: {AD: "c2", AE: "d2", AF: "e2", AG: "f2", AH: "e4 g2"}
+```
+## Related links
 
-CB will be removed. The shortest primary item is CC. c5 is chosen.
-
-### step 3
-
-CC and R5 will be removed. The shortest primary item is CF. f4 is chosen. Not d7.
-
-### step 4
-
-CF and R4 will be removed. Shortest primary item is CH. h7 will be chosen.
-
-### step 5
-
-R6 was taken in previous step. No queen can be placed on row 6. Backtracking!
-
-### step 6
-
-h7, f4 and c5 backtracked. c6 selected. d2 selected
-
+* [Stanford Lecture: Don Knuth—"Dancing Links" (2018)](https://www.youtube.com/watch?v=_cR9zDlvP88&t=3251s&ab_channel=stanfordonline)
+* [Exact Cover](https://en.wikipedia.org/wiki/Exact_cover)
+* [Knuth's Algorithm X](https://en.wikipedia.org/wiki/Knuth%27s_Algorithm_X)
+* [Dancing Links](https://en.wikipedia.org/wiki/Dancing_Links)
