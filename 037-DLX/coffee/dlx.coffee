@@ -5,7 +5,7 @@
 # Code runs in a state machine in order to avoid recursion
 # and in order to work around the lack of `goto` in JS
 
-SearchState = 
+State = 
 	FORWARD : 0
 	ADVANCE : 1
 	BACKUP : 2
@@ -23,7 +23,7 @@ search = (config) -> # rows: hash with elements "aa":[0,59,118,177]
 	nodeArray = []
 	solutions = []
 
-	currentSearchState = SearchState.FORWARD
+	currentState = State.FORWARD
 	running = true
 	level = 0
 	choices = []
@@ -38,8 +38,7 @@ search = (config) -> # rows: hash with elements "aa":[0,59,118,177]
 
 		for primary in primaries
 			head = {}
-			head.up = head
-			head.down = head
+			[head.up,head.down] = [head,head]
 			column = {head, len:0, key:primary} 
 			column.prev = colArray[curColIndex - 1]
 			colArray[curColIndex - 1].next = column
@@ -53,11 +52,9 @@ search = (config) -> # rows: hash with elements "aa":[0,59,118,177]
 
 		for secondary in secondaries
 			head = {}
-			head.up = head
-			head.down = head
+			[head.up,head.down] = [head,head]
 			column = {head, len:0, key:secondary}
-			column.prev = column
-			column.next = column
+			[column.prev,column.next] = [column,column]
 			colArray[curColIndex] = column
 			curColIndex++
 
@@ -67,12 +64,9 @@ search = (config) -> # rows: hash with elements "aa":[0,59,118,177]
 			rowStart = undefined
 
 			for columnIndex in row
-				node = {}
-				node.left = node
-				node.right = node
-				node.down = node
-				node.up = node
-				node.data = key
+				node = {data:key}
+				[node.left,node.right] = [node,node]
+				[node.down,node.up] = [node,node]
 
 				nodeArray[curNodeIndex] = node
 
@@ -98,48 +92,28 @@ search = (config) -> # rows: hash with elements "aa":[0,59,118,177]
 			nodeArray[curNodeIndex - 1].right = rowStart
 
 	iterate = (dir,node,f) ->
-		rr = node[dir]
-		while rr != node
-			f rr
-			rr = rr[dir]
+		n = node[dir]
+		while n != node
+			f n
+			n = n[dir]
 
-	cover = (c) -> # c is a column. Pls observe, left and right are never touched.
-		l = c.prev
-		r = c.next
+	cover = (c) -> # From top to bottom, left to right unlink every row node from its column
+		[c.prev.next, c.next.prev] = [c.next,c.prev] # unlink col
+		iterate 'down', c.head, (n) ->
+			iterate 'right', n, (n) ->
+				[n.down.up,n.up.down] = [n.up,n.down] # unlink node
+				n.col.len--
 
-		# Unlink column
-		l.next = r
-		r.prev = l
-
-		# From top to bottom, left to right unlink every row node from its column
-		iterate 'down', c.head, (rr) ->
-			iterate 'right', rr, (nn) ->
-				uu = nn.up
-				dd = nn.down
-				uu.down = dd
-				dd.up = uu
-				nn.col.len--
-
-	uncover  = (c) ->
-		# From bottom to top, right to left relink every row node to its column
-		iterate 'up', c.head, (rr) ->
-			iterate 'left', rr, (nn) ->
-				uu = nn.up
-				dd = nn.down
-				uu.down = nn
-				dd.up = nn
-				nn.col.len++
-
-		l = c.prev
-		r = c.next
-
-		# Unlink column
-		l.next = c
-		r.prev = c
+	uncover  = (c) -> # From bottom to top, right to left relink every row node to its column
+		iterate 'up', c.head, (n) ->
+			iterate 'left', n, (n) ->
+				[n.down.up,n.up.down] = [n,n] # link node
+				n.col.len++
+		[c.prev.next, c.next.prev] = [c,c] # link col
 
 	pickBestColumn = -> # Only R and C columns, not A and B
 		bestCol = root.next
-		iterate 'next', root, (curCol)->
+		iterate 'next', root, (curCol) ->
 			if curCol.len < bestCol.len then bestCol = curCol
 
 	forward = ->
@@ -147,36 +121,25 @@ search = (config) -> # rows: hash with elements "aa":[0,59,118,177]
 		currentNode = bestCol.head.down
 		choices[level] = currentNode
 		cover bestCol
-		currentSearchState = SearchState.ADVANCE
+		currentState = State.ADVANCE
 
 	recordSolution = -> solutions.push (choices[l].data for l in range level+1).join ' '
 
 	dumpNode = () ->
-		optionsP = {}
-		iterate 'next',root,(col)->
-			keys = []
-			iterate 'down',col.head,(p)->
-				keys.push p.data
-			optionsP[col.key] = keys.join ' ' if keys.length > 0
-
-		optionsS = {}
-		for i in range secondaries.length
-			col = colArray[17+i]
-			keys = []
-			iterate 'down',col.head,(p)->
-				keys.push p.data
-			optionsS[col.key] = keys.join ' ' if keys.length > 0
-			col = col.next
-
+		entries = {}
+		iterate 'next',root, (col) ->
+			iterate 'down',col.head, (p) ->
+				iterate 'right',p, (n)->
+					entries[n.col.key] ||= []
+					if n.data not in entries[n.col.key] then entries[n.col.key].push n.data
 		result = {}
 		result.choices = ((c.data for c in choices).join ' ').trim()
-		result.primaries = optionsP
-		result.secondaries = optionsS
+		result.entries = entries
 		snapshots.push result
 
 	advance = () ->
 		if currentNode == bestCol.head
-			currentSearchState = SearchState.BACKUP
+			currentState = State.BACKUP
 			return
 		nodes++
 
@@ -184,49 +147,46 @@ search = (config) -> # rows: hash with elements "aa":[0,59,118,177]
 
 		if root.next == root
 			recordSolution()
-			if solutions.length == numSolutions
-				currentSearchState = SearchState.DONE
-			else
-				currentSearchState = SearchState.RECOVER
+			currentState = if solutions.length == numSolutions then State.DONE else State.RECOVER
 			return
 
 		level++
-		currentSearchState = SearchState.FORWARD
+		currentState = State.FORWARD
 
 	backup = () ->
 		uncover bestCol
 		if level == 0
-			currentSearchState = SearchState.DONE
+			currentState = State.DONE
 			return
 		level--
 
 		currentNode = choices[level]
 		bestCol = currentNode.col
-		currentSearchState = SearchState.RECOVER
+		currentState = State.RECOVER
 
 	recover = () ->
 		iterate 'left',currentNode, (pp) -> uncover pp.col
 		currentNode = currentNode.down
 		choices[level] = currentNode
-		currentSearchState = SearchState.ADVANCE
+		currentState = State.ADVANCE
 
 	done = () -> running = false
 
 	stateMethods = {
-		[SearchState.FORWARD]: forward,
-		[SearchState.ADVANCE]: advance,
-		[SearchState.BACKUP]: backup,
-		[SearchState.RECOVER]: recover,
-		[SearchState.DONE]: done
+		[State.FORWARD]: forward,
+		[State.ADVANCE]: advance,
+		[State.BACKUP]: backup,
+		[State.RECOVER]: recover,
+		[State.DONE]: done
 	}
 
 	readColumnNames()
 	readRows()
 	dumpNode()
 	while running
-		currentStateMethod = stateMethods[currentSearchState]
+		currentStateMethod = stateMethods[currentState]
 		currentStateMethod()
-		if currentSearchState == 0 then dumpNode()
+		if currentState == 0 then dumpNode()
 	dumpNode()
 	return {solutions,snapshots}
 

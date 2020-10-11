@@ -19,8 +19,10 @@ console.log constraints
 # console.timeEnd 'cpu'
 #console.log snapshots
 
-constraints.primaries = constraints.primaries.join ' '
-constraints.secondaries = constraints.secondaries.join ' '
+constraints.itemNames = constraints.primaries.concat(constraints.secondaries).join ' '
+delete constraints.primaries 
+delete constraints.secondaries 
+#constraints.secondaries = constraints.secondaries.join ' '
 
 fs.writeFileSync '8queens.json', JSON.stringify {constraints, snapshots}
 if solutions.length<=92 then console.log solutions

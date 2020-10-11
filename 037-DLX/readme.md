@@ -43,3 +43,18 @@ Detta utan komplicerad användning av simd och dpll.
 
 all.bat kraschar intermittent ibland. Vet ej varför.
 
+# Bok 4B
+
+Hämtade fasc5c.ps här: https://www-cs-faculty.stanford.edu/~knuth/musings.html (31MB)
+
+Använde p2pdf.com för att konvertera fasc5c.ps till fasc5c.pdf. (4MB)
+
+Chrome kan visa pdf och även skriva ut.
+
+Innehåll:
+
+1-60 Dancing Links
+60-119 Exercises
+120-255 Answers
+256-270 Index
+
