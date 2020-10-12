@@ -97,7 +97,8 @@ search = (config) -> # rows: hash with elements "aa":[0,59,118,177]
 			f n
 			n = n[dir]
 
-	cover = (c) -> # From top to bottom, left to right unlink every row node from its column
+ # From top to bottom, left to right unlink every row node from its column
+	cover = (c) ->
 		[c.prev.next, c.next.prev] = [c.next,c.prev] # unlink col
 		iterate 'down', c.head, (n) ->
 			iterate 'right', n, (n) ->
@@ -132,6 +133,8 @@ search = (config) -> # rows: hash with elements "aa":[0,59,118,177]
 				iterate 'right',p, (n)->
 					entries[n.col.key] ||= []
 					if n.data not in entries[n.col.key] then entries[n.col.key].push n.data
+		for key,entry of entries
+			entries[key] = entry.join ' '
 		result = {}
 		result.choices = ((c.data for c in choices).join ' ').trim()
 		result.entries = entries
