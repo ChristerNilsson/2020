@@ -99,16 +99,14 @@ search = (config) -> # rows: hash with elements "aa":[0,59,118,177]
 
 	cover = (c) -> # From top to bottom, left to right unlink every row node from its column
 		[c.prev.next, c.next.prev] = [c.next,c.prev] # unlink col
-		iterate 'down', c.head, (n) ->
-			iterate 'right', n, (n) ->
-				[n.down.up,n.up.down] = [n.up,n.down] # unlink node
-				n.col.len--
+		iterate 'down', c.head, (n) -> iterate 'right', n, (n) ->
+			[n.down.up,n.up.down] = [n.up,n.down] # unlink node
+			n.col.len--
 
 	uncover  = (c) -> # From bottom to top, right to left relink every row node to its column
-		iterate 'up', c.head, (n) ->
-			iterate 'left', n, (n) ->
-				[n.down.up,n.up.down] = [n,n] # link node
-				n.col.len++
+		iterate 'up', c.head, (n) -> iterate 'left', n, (n) ->
+			[n.down.up,n.up.down] = [n,n] # link node
+			n.col.len++
 		[c.prev.next, c.next.prev] = [c,c] # link col
 
 	pickBestColumn = -> # Only R and C columns, not A and B

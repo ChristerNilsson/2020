@@ -25,5 +25,5 @@ delete constraints.secondaries
 options = Object.keys(constraints.entries).join ' '
 #constraints.secondaries = constraints.secondaries.join ' '
 
-fs.writeFileSync '8queens.json', JSON.stringify {options, items, snapshots}
+fs.writeFileSync '8queens.json', JSON.stringify {options, items, snapshots}, null, 2
 if solutions.length<=92 then console.log solutions

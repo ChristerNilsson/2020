@@ -1,26 +1,28 @@
 # front
 
-Denna filen håller ihop dlx och sudoku-dlx, för att minimera overhead och få snabb exekveringstid.
+This file is used to keep dlx and sudoku-dlx together
 
 # DLX
 
-Originalkod hittas här: https://github.com/TimBeyer/node-dlx
+Original code: https://github.com/TimBeyer/node-dlx
 
-dlx.coffee innehåller Dancing Links (översatt från typescript)
+dlx.coffee contains Dancing Links (translated from typescript)
 
-För att unikt identifiera varje rad (option) innehåller första kolumnen en unika identifierare.
+To uniqely identifie each option the first column contains unique identifiers
 
-Det är denna som visas i lösningen. T ex kan den innehålla a4 (rad kolumn) i queens och 231 i sudoku (rad kolumn siffra)
+This identifier is shown in the solution. 
 
-Hur kan man vara säker på att hitta alla lösningar om man använder sig av pickBestChoice i dlx.coffee?
+Example:
+* n-queens a1 (square)
+* sudoku 231  (row column digit)
 
 # Queens-dlx
 
 node js/queens-dlx.js 8 | node js/dlx.js
 
-queens.coffee skapar styrfil till dlx.
+queens.coffee creates an input file to dlx.
 
-Prestanda
+Performance
 * 8  3ms
 * 16 4ms
 * 20 5ms
@@ -28,33 +30,34 @@ Prestanda
 * 40 58ms
 * 50 68ms
 * 60 206ms
-* 70 101s Oklart varför tiden ökar just här.
+* 70 101s
 
 # Sudoku-dlx
 
 node js/sudoku-dlx 000000007004020600800000310000002900040090030009506000010000008006050200700000060 | node js/dlx
 
-./all.bat kör de tio första problemen från hardest_1106. Detta tar 364ms. 36 us per problem, pga faktor 1000
+./all.bat runs the first ten puzzles from hardest_1106. Takes 364ms. 36 us per problem
 
-tdoku kör 375 problem på 35ms. Detta ger 0.093ms = 93 us per problem.
+tdoku handles 375 problems in 35ms. Takes 0.093ms = 93 us per problem.
 
-Om man skriver om dlx.coffee i C++ borde man kunna uppnå ungefär samma hastighet som tdoku.
-Detta utan komplicerad användning av simd och dpll.
+Rewriting dlx.coffee in C++ should give roughly same speed as tdoku.
+Without complex tech as simd and dpll.
 
-all.bat kraschar intermittent ibland. Vet ej varför.
+all.bat crashes intermittently. No reason.
 
-# Bok 4B
+# Book 4B by Knuth
 
-Hämtade fasc5c.ps här: https://www-cs-faculty.stanford.edu/~knuth/musings.html (31MB)
+Downloaded fasc5c.ps from here: https://www-cs-faculty.stanford.edu/~knuth/musings.html (31MB)
 
-Använde p2pdf.com för att konvertera fasc5c.ps till fasc5c.pdf. (4MB)
+Used p2pdf.com to convert to fasc5c.pdf. (4MB)
 
-Chrome kan visa pdf och även skriva ut.
+Chrome can display pdf and also print
 
-Innehåll:
+Contents:
 
+```
 1-60 Dancing Links
 60-119 Exercises
 120-255 Answers
 256-270 Index
-
+```
