@@ -97,8 +97,7 @@ search = (config) -> # rows: hash with elements "aa":[0,59,118,177]
 			f n
 			n = n[dir]
 
- # From top to bottom, left to right unlink every row node from its column
-	cover = (c) ->
+	cover = (c) -> # From top to bottom, left to right unlink every row node from its column
 		[c.prev.next, c.next.prev] = [c.next,c.prev] # unlink col
 		iterate 'down', c.head, (n) ->
 			iterate 'right', n, (n) ->
@@ -185,11 +184,9 @@ search = (config) -> # rows: hash with elements "aa":[0,59,118,177]
 
 	readColumnNames()
 	readRows()
-	dumpNode()
 	while running
-		currentStateMethod = stateMethods[currentState]
-		currentStateMethod()
 		if currentState == 0 then dumpNode()
+		stateMethods[currentState]()
 	dumpNode()
 	return {solutions,snapshots}
 

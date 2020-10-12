@@ -9,6 +9,13 @@ execute = (n='8') ->
 	result = {}
 	result.header = "This data produced by queens-dlx #{n}"
 
+	# cx = []
+	# rx = []
+	# for j in range n
+	# 	t = j #(if j&1 then n-1-j else n+j) >> 1
+	# 	cx.push "C#{ENCODE t}"
+	# 	rx.push "R#{j+1}"
+
 	cx = ("C#{ENCODE i}" for i in range n)
 	rx = ("R#{j+1}" for j in range n)
 	result.primaries = (cx.concat rx).join ' '
